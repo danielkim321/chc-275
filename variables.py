@@ -41,13 +41,13 @@ print (school)
 
 
 
-print=('welcome to calvert hall')
+print ('welcome to calvert hall')
 name = input ('what is your name')
 gradyear = input('what year do you graduate?')
 standing = input('what is your class standing?')
 email = input('what is your email?')
 
-print(f"my name is Daniel, I graduate in {gradyear}, my classs standing is {standing}, and my email is {email}")
+print(f"my name is Daniel, I graduate in {gradyear}, my class standing is {standing}, and my email is {email}")
 
 
 x = input('what is num1: ')
