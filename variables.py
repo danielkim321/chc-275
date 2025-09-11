@@ -22,7 +22,7 @@ x = 5
 y =10
 z = 0
 z = x + y
-print(z)\
+print(z)
     
 
 name = "Daniel Kim" 
