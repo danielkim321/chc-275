@@ -13,7 +13,16 @@ if option == "carnivorous":
     if x == "no":
         print("enjoy!")
 elif option == "salt water":
-         print("fancy fish parent")
-     
+    print("fancy fish parent")
+elif option == "community":
+    print("you should get more than one")
+else:
+    print("i dont think thats a kind of fish")
+         
+         
+         
+         
+         
+         
     
     
