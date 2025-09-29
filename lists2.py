@@ -7,7 +7,13 @@ print(mylist)
 
 mylist.append(15) 
 print(mylist)
+
 mylist.pop(0)
 print(mylist)
+
 mylist.remove(9)
 print(mylist)
+
+
+
+
