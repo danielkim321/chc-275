@@ -5,11 +5,13 @@ print("Balance:")
 print("list accounts:")
 print("new account:")
 print("exit")
-balance = 0
+balance = [127, 919, 42]
 accounts = []
+names  = ["James", "Alice", "Bob"] 
 while True:
-    action = input("what would you like to do? ").lower()
+    action = input("what would you like to do? ")
     if action == "deposit":
+        amount = float(input("which account would you like to deposit to? (James, Alice, Bob) "))
         amount = float(input("how much would you like to deposit? "))
         balance = balance + amount
         print(f"your new balance is {balance}")
@@ -24,6 +26,10 @@ while True:
         print(f"your balance is {balance}")
     elif action == "list accounts":
         print("your accounts are:")
+        print(f"{names[0]}, {names[1]}, {names[2]}")
+        for i in range(len(names)):
+            print(f"balance for {names[i]}: {balance[i]}")
+           
         for account in accounts:
             print(account)
     elif action == "new account":
