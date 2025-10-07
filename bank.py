@@ -13,12 +13,14 @@ while True:
     if action == "deposit":
         account = input("which account would you like to deposit to? James, Alice, Bob:")
         amount = float(input("how much would you like to deposit? "))
-        index = accounts.index(account)
-        balance [index] = [index balance + amount] 
-        print(f"your new balance is {balance}")
+        index = names.index(account)
+        balance[index] = balance[index] + amount
+        print(f"your new balance is {balance[index]}")
     elif action == "withdraw":
-        account = input("which account would you like to withdraw from? (James, Alice, Bob:)")
+        account = input("which account would you like to withdraw from? James, Alice, Bob:")
         amount = float(input("how much would you like to withdraw? "))
+        index = names.index(account)
+        balance = balance[index]
         if amount > balance:
             print("insufficient funds")
         else: 
@@ -26,17 +28,19 @@ while True:
             print(f"your new balance is {balance}")
     elif action == "balance":
         action= input("which account would you like to check the balance of? James, Alice, Bob:")
+        index = names.index(action)
+        balance = balance[index]
         print(f"your balance is {balance}")
         
     elif action == "list accounts":
         print("your accounts are:")
-        print(f"{names[0]}, {names[1]}, {names[2]}")
+        
         for i in range(len(names)):
             print(f"balance for {names[i]}: {balance[i]}")
-        for account in accounts:
-            print(account)
+        
     elif action == "new account":
         account_name = input("what is the name of the new account? ")
+        balance.append(0)
         accounts.append(account_name)
         print(f"account {account_name} created")
     elif action == "exit":
@@ -44,5 +48,6 @@ while True:
         break
     else:
         print("invalid action, please try again")
+
 
 
