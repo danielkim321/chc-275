@@ -15,8 +15,12 @@ while True:
     elif x < 200 or x > 100:
         print("Medium mushroom")
     else:
-        print("Please enter a valid size.") 
-        
+        print("Please enter a valid size.")
+     elif  == "quit":
+        check = False 
+
+   
+    
    
 
     
