@@ -1,20 +1,11 @@
 word = input("Enter a word: ")
 
+i = 0
+reverse = ""
 
-clean_word = ""
-for ch in word:
-    if ch != " ":
-        if ch >= "A" and ch <= "Z":
-            ch = chr(ord(ch) + 32)  
-        clean_word = clean_word + ch
-
-
-backward = ""
-for ch in clean_word:
-    backward = ch + backward
-
-
-if clean_word == backward:
+for char in word:
+    reverse = char + reverse 
+if word == reverse:
     print("That is a palindrome!")
 else:
     print("That is not a palindrome.")
