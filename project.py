@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import pygame
  
 import sys
@@ -210,3 +211,10 @@ def main():
 while True:
     main()
  
+=======
+import pygame 
+check = True
+while check == True:
+    pygame.init()
+    screen = pygame.display.set_mode((800, 600))
+>>>>>>> 44f9fc91ead1f0a63c9ce1db22ee38173b31603f
