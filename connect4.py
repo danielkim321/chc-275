@@ -21,7 +21,7 @@ def dropPiece(board, player, column):
 
 def checkWinner(board, player):
 
-    # Horizontal
+    
     for r in range(6):
         for c in range(4):
             if board[r][c] == player:
@@ -30,7 +30,7 @@ def checkWinner(board, player):
                         if board[r][c+3] == player:
                             return True
 
-    # Vertical
+    
     for r in range(3):
         for c in range(7):
             if board[r][c] == player:
@@ -39,7 +39,7 @@ def checkWinner(board, player):
                         if board[r+3][c] == player:
                             return True
 
-    # Diagonal \
+    
     for r in range(3):
         for c in range(4):
             if board[r][c] == player:
@@ -48,7 +48,7 @@ def checkWinner(board, player):
                         if board[r+3][c+3] == player:
                             return True
 
-    # Diagonal /
+    
     for r in range(3, 6):
         for c in range(4):
             if board[r][c] == player:
