@@ -58,7 +58,7 @@ def checkWinner(board, player):
                             return True
 
     return False
-
+ 
 
 def main():
     board = [
